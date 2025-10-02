@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class ReadFile {
     public static void main(String[] args) throws FileNotFoundException {
         try{
-            File file = new File("myFile");
+            File file = new File("myFile.txt");
             Scanner Reader = new Scanner(file);
 
             while(Reader.hasNextLine()){
