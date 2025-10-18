@@ -14,6 +14,13 @@ public class Reader {
         char[] buffer = new char[10];
         CharBuffer charBuffer = CharBuffer.wrap(buffer);
 
+        if(r.markSupported()){
+            r.mark(100);
+            out.println("mark is supported");
+        }
+
+        r.skip(5);
+
         
     }
 }
