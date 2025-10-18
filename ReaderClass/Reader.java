@@ -3,6 +3,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.nio.CharBuffer;
+import java.util.Arrays;
 
 
 public class Reader {
@@ -21,6 +22,10 @@ public class Reader {
 
         r.skip(5);
 
-        
+        if(r.ready()){
+            r.read(buffer,0,10);
+            out.println("buffer after reading character: " 
+            + Arrays.toString(charBuffer.array()));
+        }
     }
 }
