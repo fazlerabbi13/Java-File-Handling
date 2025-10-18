@@ -1,4 +1,3 @@
-
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintStream;
@@ -26,6 +25,17 @@ public class Reader {
             r.read(buffer,0,10);
             out.println("buffer after reading character: " 
             + Arrays.toString(charBuffer.array()));
+            
+
+            r.read(charBuffer);
+
+            out.println("Char contents: " 
+            + Arrays.toString(charBuffer.array()));
+
+            out.println("next character: " + (char)r.read());
         }
+
+        r.close();
+
     }
 }
