@@ -11,10 +11,10 @@ public class FileInput {
             
 
             // file read character by character
-            // int ch;
-            // while((ch = fi.read()) != -1){
-            //     System.out.print((char)ch);
-            // }
+            int ch;
+            while((ch = fi.read()) != -1){
+                System.out.print((char)ch);
+            }
 
             fi.close();
         
