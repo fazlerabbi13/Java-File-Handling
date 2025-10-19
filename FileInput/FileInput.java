@@ -18,7 +18,7 @@ public class FileInput {
 
             fi.close();
         
-        
+        // exceptions
         } catch (FileNotFoundException e) {
             System.out.println("file not found.");
         }catch(IOException e){
